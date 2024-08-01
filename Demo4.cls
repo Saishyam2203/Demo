@@ -20,7 +20,8 @@ public class BadExampleClass {
 
     public void updateSingleAccount() {
         // Hardcoding Ids (bad practice)
-        Account acc = [SELECT Id, Name FROM Account WHERE Id = '001xx000003DGb2'];
+        // Replace with a meaningful query or parameterize the ID
+        Account acc = [SELECT Id, Name FROM Account WHERE Name = 'Sample Account'];
         acc.Name = 'New Name';
         update acc;
     }
